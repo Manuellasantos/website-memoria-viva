@@ -1,140 +1,60 @@
-==================================================================================================
+# 📱 Memória Viva
 
-DESCRIPTION:
+**Memória Viva** é um aplicativo mobile desenvolvido como projeto de TCC, com o objetivo de auxiliar pacientes com Alzheimer por meio de recursos interativos que estimulam a memória e reforçam a identidade pessoal. Utilizando fotos, vídeos, áudios e mensagens personalizadas, o app oferece uma experiência afetiva e acessível tanto para pacientes quanto para cuidadores e familiares.
 
-DAZZLE is a modern and beautiful well crafted responsive template created for showcasing 
-your software and mobile application. Built with clean and organized css3 and html5 code, 
-this template is very easy to customize. It's mobile ready and retina/hi-dpi ready which 
-means it will look great on any devices from mobile to desktop, sharp and crisp on any screen 
-resolutions and displays. This stylish template is perfect for showcasing your software and mobile 
-application.
+## 🎯 Objetivos
 
-==================================================================================================
+- Promover o bem-estar e a autonomia de pacientes com Alzheimer.
+- Reforçar a identidade do usuário por meio de memórias afetivas.
+- Oferecer recursos intuitivos e acessíveis, mesmo para pessoas com baixo nível de escolaridade ou familiaridade com tecnologia.
 
+## 🛠 Funcionalidades
 
-LICENSE:
+- **Cadastro de usuários e perfis individuais para pacientes.**
+- **Upload de conteúdo personalizado (foto, vídeo, áudio).**
+- **Interação por áudio com perguntas e respostas.**
+- **Catálogo por cores com áudios explicativos.**
+- **Lista de contatos com fotos e áudios personalizados.**
+- **Design focado em acessibilidade.**
+- **Duas versões: Gratuita (recursos limitados) e Premium (recursos completos).**
 
-This free resource is provided by Styleshout.com and is free to use in 
-both personal and commercial projects.
+## ⚙️ Tecnologias Utilizadas
 
+- HTML, CSS, TypeScript, Ionic
+- **Banco de Dados:** noSQL, Firebase Database
+- **Armazenamento de Mídia:** — (Especificar quando possível)
+- **Controle de Versão:** Git e GitHub
 
-Rights:
--------
+## 👩‍💻 Equipe de Desenvolvimento
 
-You are permitted to use this free resource in any number of personal and commercial projects for 
-yourself or a client. You may modify the resource according to your requirements and include them 
-in your projects under the following condition - you MUST give appropriate credit, provide an 
-attribution link to styleshout.com.
+| Nome | Função | Descrição Técnica |
+|------|--------|-------------------|
+| **Manuella Santos Cruz** | Líder de Projeto / Front-End Developer / Auxiliar em Banco de Dados | Responsável pela coordenação geral, desenvolvimento da interface do usuário (UI) e apoio na estruturação e testes do banco de dados. |
+| **Matheus Bonfim Batista** | Data Engineer / Front-End Assistant | Atua na estruturação, modelagem e manutenção do banco de dados. Auxilia também no desenvolvimento da interface. |
+| **Fernanda Marques** | Líder do Back-End / UI & UX Designer | Responsável pela arquitetura da aplicação, criação das APIs e integração com banco de dados. Também cuida do design visual e experiência do usuário. |
+| **Pedro** | UX Researcher | Conduz pesquisas com usuários, aplica formulários, testa usabilidade e coleta feedback para aprimoramento da experiência. |
+| **Dylan** | Back-End Developer | Responsável pelo desenvolvimento e manutenção do back-end, integrando as APIs e cuidando da autenticação e lógica de dados. |
 
+## 📝 Responsáveis pela Documentação
 
-Prohibitions:
--------------
+- **Manuella Santos Cruz**
+- **Matheus Bonfim Batista**
+- **Fernanda Marques**
 
-You are not permitted to resell or redistribute(even for free) the resource "as is" without 
-prior consent. If you would like to republish or promote this resource on your site, please 
-link back to the appropriate resource page on styleshout.com where users can find the download 
-and not directly to the download zip file.
+Estes membros são responsáveis por manter e atualizar a documentação do projeto para garantir clareza e organização.
 
+## 🔒 Segurança e Privacidade
 
-Attribution: 
-------------
+- Os dados dos pacientes são armazenados com criptografia.
+- Segue as boas práticas de proteção de dados, respeitando a LGPD.
+- Fotos, vídeos e áudios são privados por padrão e protegidos por autenticação.
 
-You must include a credit link to our website(https://www.styleshout.com) somewhere on your site. 
-We prefer the footer credit that comes with the template but you are still free to move it 
-somewhere else.
+## 💡 Monetização
 
+- **Versão Gratuita:** até 45 uploads de mídia, até 5 contatos cadastrados.
+- **Versão Premium:** ilimitado, com recursos adicionais como legendas e áudios explicativos extras.
 
+## 📱 Compatibilidade
 
-If you have any questions about the License, feel free to contact us.
-
-
------------------------------------------------------------------------------------------------------
-
-
-REMOVING THE ATTRIBUTION LINK:
-
-We understand that there are situations where you want to use our templates without 
-the crediting obligation. If that's your case, you can always send us a 
-credit removal fee of 10 USD through Paypal. This will allow you to use a single 
-template attribution/credit link free on ONE DOMAIN name.
-
-You can send your payments through Paypal to this address: ealigam@gmail.com
-
-If possible, kindly send us the site's url where the template is being used. 
-Also, keep your Paypal receipt as proof of payment and your good to go.
-
-
------------------------------------------------------------------------------------------------------- 
-
-
-SUPPORT:
-    
-Since DAZZLE is distributed for free, support is not offered. DAZZLE is coded according 
-to current web standards and we did our best to make the template easy to use and modify.
-If you have minimum web development experience, you can easily modify the template. 
-However, If you're still new to HTML and CSS, I suggest that you visit the 
-following tutorials:
-
- - https://webdesign.tutsplus.com/courses/30-days-to-learn-html-css
- - http://learn.shayhowe.com/html-css/
-
-These will teach you the essentials of HTML and CSS. In addition, if you want to include
-jQuery in your skill-set, you can also check out these tutorials: 
-
- - https://code.tutsplus.com/courses/30-days-to-learn-jquery
- - http://try.jquery.com/
-
-
-
------------------------------------------------------------------------------------------------------- 
-
-
-GET THE LATEST VERSION:
-
-We update our templates on a regular basis so to make sure that you have the latest version, 
-always download the template files directly on our website(http://www.styleshout.com/)
-
-
-
--------------------------------------------------------------------------------------------------------
-
-
-SOURCES AND CREDITS:
-
-I've used the following resources as listed.
-
-Fonts:
- - Montserrat Font (https://www.google.com/fonts/specimen/Montserrat)
- - Muli Font (https://fonts.google.com/specimen/Muli) 
-
-Icons:
- - Font Awesome (http://fortawesome.github.io/Font-Awesome/)
- - Micons Free Icons (http://geticonjar.com/freebies/231-micons/)
- - Webfont generated by ICOMOON (https://icomoon.io/)
-
-Stock Photos and Graphics:
- - Unsplash.com (https://unsplash.com/)
- - Relate UI Kit (https://www.invisionapp.com/relate)
- 
-Javascript Files:
-
- - JQuery (http://jquery.com/)
- - Modernizr (http://modernizr.com/)
- - Waypoints (http://imakewebthings.com/jquery-waypoints/)
- - jQuery Placeholder (https://github.com/mathiasbynens/jquery-placeholder)
- - FitVids (http://fitvidsjs.com/)
- - pace js (http://github.hubspot.com/pace/)
- - Masonry (http://masonry.desandro.com/)
- - ajaxChimp (https://github.com/scdoshi/jquery-ajaxchimp)
- - animate on scroll (https://michalsnik.github.io/aos/)
- - parallax.js (http://pixelcog.github.io/parallax.js/)
- - Owl Carousel (https://owlcarousel2.github.io/OwlCarousel2/)
-
-
-
--------------------------------------------------------------------------------------------------------
-
-
-Thanks for downloading from Styleshout :)
-
-
+- Android 
+- Compatível com múltiplos tamanhos de tela

@@ -3159,20 +3159,24 @@ footer ul a:visited {
 }
 
 /* Botão de submit */
-.footer-subscribe #contact-form input[type="submit"] {
-  width: 100%;
-  color: #ffffff;
-  background: #9C3FC3;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 1.5rem 2rem;
-  font-family: "montserrat-bold", sans-serif;
-  font-size: 1.4rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-bottom: 1.5rem;
+.send-btn {
+    width: 100%;
+    padding: 12px 18px;
+    background: #9C3FC3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background .25s;
 }
 
+.send-btn:hover {
+    background: #842ea8;
+}
+.send-txt{
+  margin-top: -2%;
+}
 .footer-subscribe #contact-form input[type="submit"]:hover {
   background: #8A2BE2;
   transform: translateY(-2px);

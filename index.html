@@ -22,7 +22,6 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
 </head>
 
 <body id="top">
@@ -47,6 +46,12 @@
    	
    </header>
 
+      </ul>
+    </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>      
+    
+   </header>
 
    <!-- início -->
   <section id="home" data-parallax="scroll" data-image-src="images/background.png" data-natural-width=3000 data-natural-height=2000>
@@ -105,7 +110,18 @@
                 <p class="lead" data-aos="fade-up">
                   O Memória Viva é um aplicativo criado para apoiar pessoas com Alzheimer em estágio inicial e intermediário. Ele ajuda a reforçar lembranças importantes por meio de fotos, áudios e mensagens enviadas pelo cuidador. O objetivo é facilitar a rotina, fortalecer vínculos e oferecer uma experiência simples, afetiva e acessível para o usuário e sua família.
                 </p>
-            </div>                       
+            </div>   
+            
+               <div class="header-daltonismo-toggle">
+    <label for="tipo-daltonismo">FILTRO:</label>
+    <select id="tipo-daltonismo" onchange="aplicarFiltroDaltonismo(this.value)">
+        <option value="original">Padrão</option>
+        <option value="protanopia">Protanopia</option>
+        <option value="deuteranopia">Deuteranopia</option>
+        <option value="tritanopia">Tritanopia</option>
+        <option value="acromatopsia">Acromatopsia</option>
+    </select>
+</div>
             
                 <!-- Script VLibras -->
     <div vw class="enabled">
@@ -120,7 +136,7 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-    
+
         </div>
 
         <div class="row about-features">
@@ -247,19 +263,6 @@
           <li>Feedback visual simples para reforço</li>
           <li>Interface de alta clareza</li>
         </ul>
-
-        <div class="audio-player">
-          <h3><span class="material-icons" aria-hidden="true">record_voice_over</span> Explicação em Áudio</h3>
-          <div class="audio-controls">
-            <button class="play-btn" data-audio="flashcards-audio" aria-label="Tocar explicação dos flashcards">
-              <span class="material-icons" aria-hidden="true">play_arrow</span>
-            </button>
-            <div class="progress-bar" aria-hidden="true">
-              <div class="progress" id="progress-flashcards"></div>
-            </div>
-            <div class="time" id="time-flashcards">0:00 / 0:00</div>
-          </div>
-        </div>
       </article>
 
       <!-- Conteúdo Meu Dia - Verde -->
@@ -274,19 +277,6 @@
           <li>Ajuda na orientação temporal ("o que aconteceu hoje")</li>
           <li>Navegação direta e sem distrações</li>
         </ul>
-
-        <div class="audio-player">
-          <h3><span class="material-icons" aria-hidden="true">record_voice_over</span> Explicação em Áudio</h3>
-          <div class="audio-controls">
-            <button class="play-btn" data-audio="meu-dia-audio" aria-label="Tocar explicação do Meu Dia">
-              <span class="material-icons" aria-hidden="true">play_arrow</span>
-            </button>
-            <div class="progress-bar" aria-hidden="true">
-              <div class="progress" id="progress-meu-dia"></div>
-            </div>
-            <div class="time" id="time-meu-dia">0:00 / 0:00</div>
-          </div>
-        </div>
       </article>
 
       <!-- Conteúdo Contatos - Laranja -->
@@ -301,19 +291,6 @@
           <li>Leitura por voz do nome e relação</li>
           <li>Organização simples e acessível</li>
         </ul>
-
-        <div class="audio-player">
-          <h3><span class="material-icons" aria-hidden="true">record_voice_over</span> Explicação em Áudio</h3>
-          <div class="audio-controls">
-            <button class="play-btn" data-audio="contatos-audio" aria-label="Tocar explicação dos Contatos">
-              <span class="material-icons" aria-hidden="true">play_arrow</span>
-            </button>
-            <div class="progress-bar" aria-hidden="true">
-              <div class="progress" id="progress-contatos"></div>
-            </div>
-            <div class="time" id="time-contatos">0:00 / 0:00</div>
-          </div>
-        </div>
       </article>
 
       <!-- Conteúdo Áudio Explicativo - Vermelho -->
@@ -328,19 +305,6 @@
           <li>Reprodução ilimitada</li>
           <li>Interface com controles grandes e intuitivos</li>
         </ul>
-
-        <div class="audio-player">
-          <h3><span class="material-icons" aria-hidden="true">record_voice_over</span> Explicação em Áudio</h3>
-          <div class="audio-controls">
-            <button class="play-btn" data-audio="audio-explicativo" aria-label="Tocar áudio explicativo">
-              <span class="material-icons" aria-hidden="true">play_arrow</span>
-            </button>
-            <div class="progress-bar" aria-hidden="true">
-              <div class="progress" id="progress-audio"></div>
-            </div>
-            <div class="time" id="time-audio">0:00 / 0:00</div>
-          </div>
-        </div>
       </article>
     </div>
   </div>

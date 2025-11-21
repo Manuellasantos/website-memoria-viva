@@ -351,3 +351,27 @@ document.querySelectorAll('.play-btn').forEach(button => {
     console.log('Reproduzindo áudio:', audioType);
   });
 });
+
+/**
+ * Aplica a classe CSS do filtro de daltonismo na tag <body>
+ * @param {string} tipo - O tipo de daltonismo a simular ('protanopia', 'deuteranopia', etc.)
+ */
+function aplicarFiltroDaltonismo(tipo) {
+    const body = document.body;
+
+    // Remove todas as classes de filtro existentes no body para limpar a seleção anterior
+    body.classList.remove(
+        'filtro-protanopia',
+        'filtro-deuteranopia',
+        'filtro-tritanopia',
+        'filtro-acromatopsia'
+    );
+
+    // Aplica a nova classe de filtro, se o valor não for "original"
+    if (tipo !== 'original') {
+        body.classList.add('filtro-' + tipo);
+    }
+}
+
+// Nota: Certifique-se de que a função 'aplicarFiltroDaltonismo' esteja acessível
+// globalmente se você a estiver chamando diretamente no 'onchange' do HTML.

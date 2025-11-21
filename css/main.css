@@ -3408,3 +3408,114 @@ footer ul a:visited {
     display: none;
   }
 }
+
+/* =========================================
+   FILTROS DE SIMULAÇÃO DE DALTONISMO
+   ========================================= */
+
+/* Transição suave para o filtro no corpo da página */
+body {
+    transition: filter 0.5s ease;
+}
+
+/* Protanopia (Vermelho-fraco - Confusão Vermelho/Verde) */
+.filtro-protanopia {
+    /* Simulação da perda de sensibilidade ao vermelho */
+    filter: grayscale(30%) sepia(100%) hue-rotate(-20deg) brightness(1.1) contrast(1.1);
+    -webkit-filter: grayscale(30%) sepia(100%) hue-rotate(-20deg) brightness(1.1) contrast(1.1);
+}
+
+/* Deuteranopia (Verde-fraco - Confusão Vermelho/Verde) */
+.filtro-deuteranopia {
+    /* Simulação da perda de sensibilidade ao verde */
+    filter: grayscale(30%) sepia(100%) hue-rotate(20deg) brightness(1.1) contrast(1.1);
+    -webkit-filter: grayscale(30%) sepia(100%) hue-rotate(20deg) brightness(1.1) contrast(1.1);
+}
+
+/* Tritanopia (Azul-fraco - Confusão Azul/Amarelo) */
+.filtro-tritanopia {
+    /* Simulação da confusão azul-amarelo */
+    filter: grayscale(50%) sepia(50%) hue-rotate(180deg) brightness(1.1) contrast(1.1);
+    -webkit-filter: grayscale(50%) sepia(50%) hue-rotate(180deg) brightness(1.1) contrast(1.1);
+}
+
+/* Acromatopsia (Total/Monocromático) */
+.filtro-acromatopsia {
+    /* Simulação de ausência total de cores */
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+/* =========================================
+   FILTRO DE DALTONISMO — ULTRA COMPACTO
+   ========================================= */
+
+:root {
+    --roxo-principal: #6A0DAD;
+    --roxo-claro: #9370DB;
+}
+
+.header-daltonismo-toggle {
+    position: absolute;
+    top: 20px;         /* pode reduzir mais se quiser */
+    right: 15px;
+    z-index: 999;
+
+    background: #fff;
+    padding: 2px 4px;         /* MINÚSCULO */
+    border-radius: 3px;
+    border: 1px solid var(--roxo-principal);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.header-daltonismo-toggle label {
+    color: var(--roxo-principal);
+    font-size: 0.75rem;   /* bem pequeno */
+    font-weight: 600;
+}
+
+.header-daltonismo-toggle select {
+    background: #f0f0f0;
+    color: #333;
+    padding: 2px 4px;      /* minúsculo */
+    border: 1px solid var(--roxo-claro);
+    border-radius: 3px;
+    font-size: 0.75rem;    /* minúsculo */
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    /* seta custom */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236A0DAD%22%20d%3D%22M287%2069.9a14.7%2014.7%200%200%200-20.8%200L146.2%20190.5%2026.3%2069.9a14.7%2014.7%200%200%200-20.8%2020.8l130.6%20130.8c5.8%205.8%2015.2%205.8%2021%200l130.6-130.8a14.7%2014.7%200%200%200%200-20.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+    background-size: 6px;
+
+    padding-right: 12px;
+}
+
+.header-daltonismo-toggle select:hover {
+    background: #fff;
+    border-color: var(--roxo-principal);
+}
+
+.header-daltonismo-toggle select:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px var(--roxo-claro);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .header-daltonismo-toggle {
+        right: 55px;
+        top: 15px;
+    }
+}
+
+
+

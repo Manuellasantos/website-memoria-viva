@@ -67,7 +67,7 @@ body {
 }
 
 body {
-  background: #141515;
+  background: #ffffff;
   font-family: "muli-regular", sans-serif;
   font-size: 1.6rem;
   line-height: 1.875;
@@ -76,6 +76,9 @@ body {
   padding: 0;
 }
 
+footer{
+  background-color: #111111;
+}
 
 /* ------------------------------------------------------------------- 
  * links - (_document-setup) 
@@ -3275,3 +3278,4 @@ footer ul a:visited {
     display: none;
   }
 }
+

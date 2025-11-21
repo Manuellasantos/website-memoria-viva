@@ -2486,480 +2486,446 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
 }
 
-/* ===================================================================
- * 13. team - (_layout.scss)
- * ------------------------------------------------------------------- */
-
-/* --- Seção Geral --- */
-#team {
-  background: #FFFFFF;
-  padding: 8rem 0 6rem;
-  text-align: center;
-  min-height: 500px;
+/* ===========
+   EQUIPE 
+=================================================================== */
+#equipe {
+    background: #FFFFFF;
+    padding: 8rem 0 6rem;
+    text-align: center;
+    min-height: 500px;
 }
 
-#team .owl-wrap {
-  width: 95%; /* Mais largo para caber 3 cards */
-  max-width: 1400px; /* Largura máxima aumentada */
-  margin: 3rem auto 0;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.col-twelve {
+    width: 100%;
+}
+
+.intro-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.intro-header::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #9C3FC3, #7a2f9a);
+    margin: 1.5rem auto 0;
+    border-radius: 2px;
 }
 
 #team-slider {
-  margin: 0 0 2rem 0;
-  position: relative;
+    margin: 0 0 2rem 0;
+    position: relative;
 }
 
 #team-slider .slides {
-  padding-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* Cards dos membros - Ajustados para grid */
 .team-member {
-  border-radius: 20px;
-  padding: 2rem 1.5rem;
-  margin: 0.8rem;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  position: relative;
-  overflow: hidden;
-  min-height: 380px; /* Altura compacta */
-  display: flex;
-  align-items: center;
-  max-width: 320px; /* Largura fixa para grid */
-  margin: 0 auto;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    margin: 0.8rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
-/* Efeito de brilho ao passar o mouse */
 .team-member::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.6s;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.6s;
 }
 
 .team-member:hover::before {
-  left: 100%;
+    left: 100%;
 }
 
-/* Efeito de levantamento no hover (box-shadow definido por classe de cor) */
+/* 1. Manuella - Roxo (Escuro) */
+.team-member.manuella {
+    background: linear-gradient(135deg, #9C3FC3, #7a2f9a);
+    color: white;
+    box-shadow: 0 10px 25px rgba(156, 63, 195, 0.15);
+}
+.team-member.manuella:hover {
+    box-shadow: 0 15px 35px rgba(156, 63, 195, 0.4);
+}
+.manuella .member-photo img { border-color: white; }
+.manuella .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
+.manuella .member-details h3 { color: white; }
+.manuella .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
+.manuella .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
+.manuella .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+.manuella p { color: rgba(255, 255, 255, 0.9); }
+
+/* 2. Fernanda - Verde (Escuro) */
+.team-member.fernanda {
+    background: linear-gradient(135deg, #1a75ff, #005ce6);
+    color: white;
+    box-shadow: 0 10px 25px rgba(26, 117, 255, 0.15);
+}
+.team-member.fernanda:hover {
+    box-shadow: 0 15px 35px rgba(26, 117, 255, 0.4);
+}
+.fernanda .member-photo img { border-color: white; }
+.fernanda .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
+.fernanda .member-details h3 { color: white; }
+.fernanda .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
+.fernanda .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
+.fernanda .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+.fernanda p { color: rgba(255, 255, 255, 0.9); }
+
+/* 3. Matheus - Laranja (Escuro) */
+.team-member.matheus {
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    color: white;
+    box-shadow: 0 10px 25px rgba(219, 99, 38, 0.15);
+}
+.team-member.matheus:hover {
+    box-shadow: 0 15px 35px rgba(219, 99, 38, 0.4);
+}
+.matheus .member-photo img { border-color: white; }
+.matheus .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
+.matheus .member-details h3 { color: white; }
+.matheus .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
+.matheus .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
+.matheus .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+.matheus p { color: rgba(255, 255, 255, 0.9); }
+
+/* 4. Dylan - Roxo (Escuro) */
+.team-member.dylan {
+    background: linear-gradient(135deg, #DB6326, #DB6326);
+    color: white;
+    box-shadow: 0 10px 25px rgba(219, 99, 38, 0.15);
+  }
+.team-member.dylan:hover {
+    box-shadow: 0 15px 35px rgba(219, 99, 38, 0.4);
+}
+.dylan .member-photo img { border-color: white; }
+.dylan .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
+.dylan .member-details h3 { color: white; }
+.dylan .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
+.dylan .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
+.dylan .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+.dylan p { color: rgba(255, 255, 255, 0.9); }
+
+/* 5. Pedro - Azul (Escuro) */
+.team-member.pedro {
+    background: linear-gradient(135deg, #1a75ff, #005ce6);
+    color: white;
+    box-shadow: 0 10px 25px rgba(26, 117, 255, 0.15);
+}
+.team-member.pedro:hover {
+    box-shadow: 0 15px 35px rgba(26, 117, 255, 0.4);
+}
+.pedro .member-photo img { border-color: white; }
+.pedro .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
+.pedro .member-details h3 { color: white; }
+.pedro .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
+.pedro .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
+.pedro .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+.pedro p { color: rgba(255, 255, 255, 0.9); }
+
 .team-member:hover {
-  transform: translateY(-6px) scale(1.01);
+    transform: translateY(-6px) scale(1.01);
 }
 
 .member-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 /* Informações do membro */
 .member-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
 }
 
 .member-photo {
-  position: relative;
-  width: 90px; /* Foto compacta */
-  height: 90px;
+    position: relative;
+    width: 90px;
+    height: 90px;
 }
 
 .member-photo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid;
-  position: relative;
-  z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid;
+    position: relative;
+    z-index: 2;
 }
 
 .photo-frame {
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border-radius: 50%;
-  border: 2px dashed;
-  animation: rotate 15s linear infinite;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border: 2px dashed;
+    animation: rotate 15s linear infinite;
 }
 
 @keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .member-details {
-  text-align: center;
-  width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 .member-details h3 {
-  font-family: "montserrat-semibold", sans-serif;
-  font-size: 1.6rem; /* Título compacto */
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 .role {
-  display: block;
-  font-family: "muli-bold", sans-serif;
-  font-size: 1.2rem; /* Cargo compacto */
-  line-height: 1.3;
-  padding: 0.4rem 1rem;
-  border-radius: 18px;
-  margin-bottom: 1rem;
-  display: inline-block;
+    display: block;
+    font-family: "Muli", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    padding: 0.4rem 1rem;
+    border-radius: 18px;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
 
 /* Links Sociais */
 .member-social {
-  display: flex;
-  justify-content: center;
-  gap: 0.6rem;
-  margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
 }
 
 .social-link {
-  font-family: "muli-regular", sans-serif;
-  font-size: 1.5rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 12px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: 1.5px solid transparent;
-  display: inline-block;
+    font-family: "Muli", sans-serif;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1.5px solid transparent;
+    display: inline-block;
 }
 
 .social-link:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 /* Texto */
 #team-slider p {
-  font-family: "muli-regular", sans-serif;
-  font-size: 1.4rem; /* Texto compacto */
-  line-height: 1.5;
-  margin: 0;
-  padding: 0 0.3rem;
-  font-style: italic;
+    font-family: "Muli", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0.3rem;
+    font-style: italic;
 }
 
-
-/* ------------------------------------------------------------------ */
-/* --- ESQUEMAS DE CORES PERSONALIZADAS PARA OS MEMBROS (NOVOS E ATUAIS) --- */
-/* ------------------------------------------------------------------ */
-
-/* 1. Roxo (Escuro) */
-.team-member.purple-bg {
-  background: linear-gradient(135deg, #9C3FC3, #7a2f9a);
-  color: white;
-  box-shadow: 0 10px 25px rgba(156, 63, 195, 0.15);
-}
-.team-member.purple-bg:hover {
-  box-shadow: 0 15px 35px rgba(156, 63, 195, 0.4);
-}
-.purple-bg .member-photo img { border-color: white; }
-.purple-bg .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
-.purple-bg .member-details h3 { color: white; }
-.purple-bg .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
-.purple-bg .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
-.purple-bg .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
-.purple-bg p { color: rgba(255, 255, 255, 0.9); }
-
-
-/* 2. Branco (Claro - com acento Roxo) */
-.team-member.white-bg {
-  background: white;
-  color: #333;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  border: 2px solid #f8f9fa;
-}
-.team-member.white-bg:hover {
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-}
-.white-bg .member-photo img { border-color: #9C3FC3; }
-.white-bg .photo-frame { border-color: rgba(156, 63, 195, 0.4); }
-.white-bg .member-details h3 { color: #9C3FC3; }
-.white-bg .role { background: rgba(156, 63, 195, 0.1); color: #9C3FC3; }
-.white-bg .social-link { background: rgba(156, 63, 195, 0.08); color: #9C3FC3; border-color: rgba(156, 63, 195, 0.2); }
-.white-bg .social-link:hover { background: rgba(156, 63, 195, 0.15); border-color: rgba(156, 63, 195, 0.4); }
-.white-bg p { color: #555; }
-
-
-/* 3. Azul (Escuro - NOVO) */
-.team-member.blue-bg {
-  /* Royal Blue Gradient */
-  background: linear-gradient(135deg, #1a75ff, #005ce6);
-  color: white;
-  box-shadow: 0 10px 25px rgba(26, 117, 255, 0.15);
-}
-.team-member.blue-bg:hover {
-  box-shadow: 0 15px 35px rgba(26, 117, 255, 0.4);
-}
-.blue-bg .member-photo img { border-color: white; }
-.blue-bg .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
-.blue-bg .member-details h3 { color: white; }
-.blue-bg .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
-.blue-bg .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
-.blue-bg .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
-.blue-bg p { color: rgba(255, 255, 255, 0.9); }
-
-
-/* 4. Verde (Escuro - NOVO) */
-.team-member.green-bg {
-  /* Emerald Green Gradient */
-  background: linear-gradient(135deg, #4CAF50, #388E3C);
-  color: white;
-  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.15);
-}
-.team-member.green-bg:hover {
-  box-shadow: 0 15px 35px rgba(76, 175, 80, 0.4);
-}
-.green-bg .member-photo img { border-color: white; }
-.green-bg .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
-.green-bg .member-details h3 { color: white; }
-.green-bg .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
-.green-bg .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
-.green-bg .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
-.green-bg p { color: rgba(255, 255, 255, 0.9); }
-
-
-/* 5. Laranja (Claro - NOVO) */
-.team-member.orange-bg {
-  /* Light background with Orange accent */
-  background: #fff3e0; /* Very light orange background */
-  color: #333;
-  box-shadow: 0 10px 25px rgba(255, 152, 0, 0.08);
-  border: 2px solid #ffebcd;
-}
-.team-member.orange-bg:hover {
-  box-shadow: 0 15px 35px rgba(255, 152, 0, 0.2);
-}
-.orange-bg .member-photo img { border-color: #FF9800; } /* Orange Accent */
-.orange-bg .photo-frame { border-color: rgba(255, 152, 0, 0.4); } /* Orange Accent */
-.orange-bg .member-details h3 { color: #FF9800; } /* Orange Accent */
-.orange-bg .role { background: rgba(255, 152, 0, 0.1); color: #FF9800; } /* Orange Accent */
-.orange-bg .social-link { background: rgba(255, 152, 0, 0.08); color: #FF9800; border-color: rgba(255, 152, 0, 0.2); } /* Orange Accent */
-.orange-bg .social-link:hover { background: rgba(255, 152, 0, 0.15); border-color: rgba(255, 152, 0, 0.4); } /* Orange Accent */
-.orange-bg p { color: #555; }
-
-
-/* --- Configuração do Owl Carousel (Mantendo o tema Roxo como primário para a navegação) --- */
+/* Configuração do Owl Carousel */
 .owl-stage {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .owl-item {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* Dots personalizados */
 #team-slider .owl-dots {
-  text-align: center;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #team-slider .owl-dots .owl-dot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #team-slider .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  background-color: #E0E0E0;
-  margin: 0;
-  display: block;
-  transition: all 0.3s ease;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid transparent;
+    width: 10px;
+    height: 10px;
+    background-color: #E0E0E0;
+    margin: 0;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
 }
 
 #team-slider .owl-dots .owl-dot.active span,
 #team-slider .owl-dots .owl-dot:hover span {
-  background-color: #9C3FC3;
-  transform: scale(1.3);
-  border: 2px solid #7a2f9a;
-  box-shadow: 0 0 0 3px rgba(156, 63, 195, 0.2);
+    background-color: #9C3FC3;
+    transform: scale(1.3);
+    border: 2px solid #7a2f9a;
+    box-shadow: 0 0 0 3px rgba(156, 63, 195, 0.2);
 }
 
 /* Navegação */
 #team-slider .owl-nav {
-  margin-top: 2rem;
-  text-align: center;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 #team-slider .owl-nav [class*='owl-'] {
-  background: #9C3FC3;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin: 0 6px;
-  font-size: 1.6rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 10px rgba(156, 63, 195, 0.3);
+    background: #9C3FC3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 6px;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(156, 63, 195, 0.3);
 }
 
 #team-slider .owl-nav [class*='owl-']:hover {
-  background: #7a2f9a;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(156, 63, 195, 0.4);
+    background: #7a2f9a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(156, 63, 195, 0.4);
 }
-
 
 /* Responsividade */
 @media (max-width: 1199px) {
-  #team .owl-wrap {
-    width: 90%;
-    max-width: 1000px;
-  }
-  
-  .team-member {
-    min-height: 370px;
-    padding: 1.8rem 1.2rem;
-    max-width: 300px;
-  }
+    #equipe {
+        padding: 6rem 0 4rem;
+    }
+    
+    .team-member {
+        min-height: 370px;
+        padding: 1.8rem 1.2rem;
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 767px) {
-  #team {
-    padding: 6rem 0 4rem;
-  }
-  
-  #team .owl-wrap {
-    width: 95%;
-    max-width: 600px;
-  }
-  
-  .team-member {
-    min-height: 350px;
-    padding: 1.5rem 1rem;
-    max-width: 280px;
-  }
-  
-  .member-photo {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .member-details h3 {
-    font-size: 1.5rem;
-  }
-  
-  .role {
-    font-size: 1.1rem;
-    padding: 0.35rem 0.9rem;
-  }
-  
-  #team-slider p {
-    font-size: 1.3rem;
-  }
-  
-  .social-link {
-    font-size: 1.5rem;
-    padding: 0.25rem 0.6rem;
-  }
+    #equipe {
+        padding: 6rem 0 4rem;
+    }
+    
+    .team-member {
+        min-height: 350px;
+        padding: 1.5rem 1rem;
+        max-width: 280px;
+    }
+    
+    .member-photo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .member-details h3 {
+        font-size: 1.5rem;
+    }
+    
+    .role {
+        font-size: 1.1rem;
+        padding: 0.35rem 0.9rem;
+    }
+    
+    #team-slider p {
+        font-size: 1.3rem;
+    }
+    
+    .social-link {
+        font-size: 1.5rem;
+        padding: 0.25rem 0.6rem;
+    }
 }
 
 @media (max-width: 480px) {
-  #team .owl-wrap {
-    width: 98%;
-  }
-  
-  .team-member {
-    min-height: 340px;
-    padding: 1.2rem 0.8rem;
-    max-width: 260px;
-  }
-  
-  .member-photo {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .member-details h3 {
-    font-size: 1.4rem;
-  }
-  
-  #team-slider p {
-    font-size: 1.2rem;
-  }
-  
-  .member-social {
-    gap: 0.4rem;
-  }
-  
-.member-social {
-    display: flex;
-    gap: 12px;
-    margin-top: 10px;
-}
-
-/* Os ícones sociais foram ajustados aqui para ficarem circulares e centrados */
-.social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    /* Removido o background genérico, as classes de cor cuidarão disso */
-    transition: all 0.3s ease;
-    text-decoration: none;
-    padding: 0; /* Removido padding, pois agora é um círculo de 50x50 */
-    border: none; /* Removido borda, pois é tratado por classe */
-}
-
-.social-link .fa {
-    font-size: 20px; /* Reduzido o tamanho do ícone para caber no círculo */
-}
-
-/* Reaplicando estilos específicos para social links em mobile (substitui os de cima) */
-
-/* Roxo (e Dark/Escuros) */
-.purple-bg .social-link, .blue-bg .social-link, .green-bg .social-link {
-    background: rgba(255, 255, 255, 0.1);
-}
-.purple-bg .social-link .fa, .blue-bg .social-link .fa, .green-bg .social-link .fa {
-    color: #fff;
-}
-.purple-bg .social-link:hover, .blue-bg .social-link:hover, .green-bg .social-link:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-/* Branco (e Light/Claros) */
-.white-bg .social-link, .orange-bg .social-link {
-    background: rgba(0, 0, 0, 0.08);
-}
-.white-bg .social-link .fa {
-    color: #9C3FC3;
-}
-.orange-bg .social-link .fa {
-    color: #FF9800;
-}
-.white-bg .social-link:hover, .orange-bg .social-link:hover {
-    background: rgba(0, 0, 0, 0.15);
-}
-
+    .team-member {
+        min-height: 340px;
+        padding: 1.2rem 0.8rem;
+        max-width: 260px;
+    }
+    
+    .member-photo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .member-details h3 {
+        font-size: 1.4rem;
+    }
+    
+    #team-slider p {
+        font-size: 1.2rem;
+    }
+    
+    .member-social {
+        gap: 0.4rem;
+    }
+    
+    .member-social {
+        display: flex;
+        gap: 12px;
+        margin-top: 10px;
+    }
+    
+    .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        padding: 0;
+        border: none;
+    }
+    
+    .social-link .fa {
+        font-size: 20px;
+    }
 }
 /* ===================================================================
  *  14. download - (_layout.scss)

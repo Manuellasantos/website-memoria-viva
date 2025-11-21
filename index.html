@@ -463,7 +463,7 @@
                                 <a href="https://github.com/HaFethi" class="social-link">
                                     <i class="fa fa-github"></i>
                                 </a>
-                                <a href="#" class="social-link">
+                                <a href="https://www.linkedin.com/in/dylan-nejelischi-745b002b6/" class="social-link">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
                                 <a href="https://www.instagram.com/dylxn_tsk/" class="social-link">
@@ -585,23 +585,44 @@
 
                 <div class="col-four md-1-2 tab-full footer-subscribe">
 
-                    <h4>E-mail</h4>
+                    <h4>Entre em Contato</h4>
 
                     <div class="subscribe-form">
-                
-                        <form id="mc-form" class="group" novalidate="true">
+                    
+                      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="group">
 
-                            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required=""> 
-                
-                            <input type="submit" name="subscribe" value="Send">
-                
-                            <label for="mc-email" class="subscribe-message"></label>
-                
-                        </form>
+                          <input type="hidden" name="access_key" value="18335439-da72-4c9f-a636-3489ab7afc1d">
+                          <input type="hidden" name="redirect" value="0">
+
+                          <div class="input-group">
+                              <i class="fa fa-user"></i>
+                              <input type="text" name="name" placeholder="Seu Nome" required>
+                          </div>
+
+                          <div class="input-group">
+                              <i class="fa fa-envelope"></i>
+                              <input type="email" name="email" placeholder="Seu Email" required>
+                          </div>
+
+                          <div class="input-group">
+                              <i class="fa fa-tag"></i>
+                              <input type="text" name="subject" placeholder="Assunto" required>
+                          </div>
+
+                          <div class="input-group textarea-group">
+                              <i class="fa fa-comment"></i>
+                              <textarea name="message" placeholder="Sua Mensagem" rows="4" required></textarea>
+                          </div>
+
+                          <input type="submit" value="Enviar Mensagem">
+
+                          <div class="form-message"></div>
+                      </form>
+
 
                     </div>	      		
-                            
-                </div> <!-- end footer-subscribe -->         
+                                    
+</div> <!-- end footer-subscribe -->     
 
             </div> <!-- /row -->
         </div> <!-- end footer-main -->

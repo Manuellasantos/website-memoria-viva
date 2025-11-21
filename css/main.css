@@ -3070,7 +3070,6 @@ footer ul a:visited {
   transition: all 0.5s ease-in-out;
 }
 
-
 .footer-social-list {
   font-size: 1.8rem;
   margin-top: -1.5rem;
@@ -3090,74 +3089,170 @@ footer ul a:visited {
   margin-bottom: 3rem;
 }
 
+/* ===================================================================
+ *  Formulário de Contato Atualizado
+ * ------------------------------------------------------------------- */
+
 .footer-subscribe .subscribe-form {
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-.footer-subscribe #mc-form {
+.footer-subscribe #contact-form {
   width: 100%;
 }
 
-.footer-subscribe #mc-form input[type="email"] {
-  width: 200%;
-  height: auto;
-  padding: 1.2rem 100px 1.2rem 60px;
-  background: url(../images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
-  background-size: 24px 16px, auto;
-  margin-bottom: 1.8rem;
-  color: rgba(255, 255, 255, 0.5);
+/* Grupos de input com ícones */
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
-.footer-subscribe #mc-form input[type="email"]:focus {
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: #9C3FC3;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.textarea-group i {
+  top: 1.4rem;
+  transform: none;
+}
+
+/* Campos do formulário */
+.footer-subscribe #contact-form input[type="text"],
+.footer-subscribe #contact-form input[type="email"],
+.footer-subscribe #contact-form textarea {
+  width: 100%;
+  height: auto;
+  padding: 1.2rem 1.5rem 1.2rem 4.5rem;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  outline: none;
+  position: relative;
+}
+
+.footer-subscribe #contact-form textarea {
+  background-size: 18px 18px, auto;
+  min-height: 120px;
+  resize: vertical;
+  padding-left: 4.5rem;
+}
+
+/* Estados de foco */
+.footer-subscribe #contact-form input[type="text"]:focus,
+.footer-subscribe #contact-form input[type="email"]:focus,
+.footer-subscribe #contact-form textarea:focus {
+  color: #ffffff;
+  border-color: #9C3FC3;
+  background-color: rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.input-group input:focus + i,
+.input-group textarea:focus + i {
   color: #ffffff;
 }
 
-.footer-subscribe #mc-form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
+/* Botão de submit */
+.footer-subscribe #contact-form input[type="submit"] {
+  width: 100%;
   color: #ffffff;
   background: #9C3FC3;
-  border-color: #9C3FC3;
-  border-radius: 0 .5rem .5rem 0;
-  padding: 0 15px;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
 }
 
-.footer-subscribe #mc-form label {
-  color: #ffffff;
-  font-family: "montserrat-regular", sans-serif;
+.footer-subscribe #contact-form input[type="submit"]:hover {
+  background: #8A2BE2;
+  transform: translateY(-2px);
+}
+
+/* Mensagens do formulário */
+.form-message {
+  margin-top: 1rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.5rem;
   font-size: 1.3rem;
-  padding: 0 2rem;
+  display: none;
+  font-family: "montserrat-regular", sans-serif;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
-.footer-subscribe #mc-form label i {
-  padding-right: 6px;
+/* Sucesso */
+.form-message.success {
+  display: block;
+  background: rgba(22, 185, 84, 0.2);
+  border: 1px solid rgba(22, 185, 84, 0.3);
+  color: #0f8f40;
 }
 
-.footer-subscribe #mc-form ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+/* Erro */
+.form-message.error {
+  display: block;
+  background: rgba(219, 99, 38, 0.2);
+  border: 1px solid rgba(219, 99, 38, 0.3);
+  color: #DB6326;
 }
 
-.footer-subscribe #mc-form :-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2);
-  /* Firefox 18- */
+/* Placeholders */
+.footer-subscribe #contact-form ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-subscribe #mc-form ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2);
-  /* Firefox 19+ */
+.footer-subscribe #contact-form :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-subscribe #mc-form :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+.footer-subscribe #contact-form ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-subscribe #mc-form .placeholder {
-  color: rgba(255, 255, 255, 0.2) !important;
+.footer-subscribe #contact-form :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-subscribe #contact-form .placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+  .input-group i {
+    left: 1.2rem;
+    font-size: 1.4rem;
+  }
+  
+  .footer-subscribe #contact-form input[type="text"],
+  .footer-subscribe #contact-form input[type="email"],
+  .footer-subscribe #contact-form textarea {
+    padding-left: 4rem;
+  }
+  
+  .textarea-group i {
+    top: 1.2rem;
+  }
+}
+
+/* Footer bottom (mantido do original) */
 .footer-bottom {
   margin-top: 6.6rem;
   text-align: center;
@@ -3177,7 +3272,6 @@ footer ul a:visited {
 .footer-bottom .copyright span:last-child::after {
   display: none;
 }
-
 
 /* ------------------------------------------------------------------- 
  * go to top

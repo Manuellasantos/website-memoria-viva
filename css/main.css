@@ -2490,6 +2490,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * 13. team - (_layout.scss)
  * ------------------------------------------------------------------- */
 
+/* --- Seção Geral --- */
 #team {
   background: #FFFFFF;
   padding: 8rem 0 6rem;
@@ -2527,6 +2528,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   margin: 0 auto;
 }
 
+/* Efeito de brilho ao passar o mouse */
 .team-member::before {
   content: '';
   position: absolute;
@@ -2542,22 +2544,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   left: 100%;
 }
 
-.team-member.purple-bg {
-  background: linear-gradient(135deg, #9C3FC3, #7a2f9a);
-  color: white;
-  box-shadow: 0 10px 25px rgba(156, 63, 195, 0.15);
-}
-
-.team-member.white-bg {
-  background: white;
-  color: #333;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  border: 2px solid #f8f9fa;
-}
-
+/* Efeito de levantamento no hover (box-shadow definido por classe de cor) */
 .team-member:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 15px 35px rgba(156, 63, 195, 0.2);
 }
 
 .member-content {
@@ -2591,14 +2580,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   z-index: 2;
 }
 
-.purple-bg .member-photo img {
-  border-color: white;
-}
-
-.white-bg .member-photo img {
-  border-color: #9C3FC3;
-}
-
 .photo-frame {
   position: absolute;
   top: -5px;
@@ -2608,14 +2589,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   border-radius: 50%;
   border: 2px dashed;
   animation: rotate 15s linear infinite;
-}
-
-.purple-bg .photo-frame {
-  border-color: rgba(255, 255, 255, 0.6);
-}
-
-.white-bg .photo-frame {
-  border-color: rgba(156, 63, 195, 0.4);
 }
 
 @keyframes rotate {
@@ -2635,14 +2608,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   line-height: 1.2;
 }
 
-.purple-bg .member-details h3 {
-  color: white;
-}
-
-.white-bg .member-details h3 {
-  color: #9C3FC3;
-}
-
 .role {
   display: block;
   font-family: "muli-bold", sans-serif;
@@ -2652,17 +2617,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   border-radius: 18px;
   margin-bottom: 1rem;
   display: inline-block;
-}
-
-.purple-bg .role {
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
-  backdrop-filter: blur(10px);
-}
-
-.white-bg .role {
-  background: rgba(156, 63, 195, 0.1);
-  color: #9C3FC3;
 }
 
 /* Links Sociais */
@@ -2684,30 +2638,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   display: inline-block;
 }
 
-.purple-bg .social-link {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.white-bg .social-link {
-  background: rgba(156, 63, 195, 0.08);
-  color: #9C3FC3;
-  border-color: rgba(156, 63, 195, 0.2);
-}
-
 .social-link:hover {
   transform: translateY(-2px);
-}
-
-.purple-bg .social-link:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.white-bg .social-link:hover {
-  background: rgba(156, 63, 195, 0.15);
-  border-color: rgba(156, 63, 195, 0.4);
 }
 
 /* Texto */
@@ -2720,15 +2652,107 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   font-style: italic;
 }
 
-.purple-bg p {
-  color: rgba(255, 255, 255, 0.9);
-}
 
-.white-bg p {
-  color: #555;
-}
+/* ------------------------------------------------------------------ */
+/* --- ESQUEMAS DE CORES PERSONALIZADAS PARA OS MEMBROS (NOVOS E ATUAIS) --- */
+/* ------------------------------------------------------------------ */
 
-/* Configuração do Owl Carousel para 3 e 2 cards */
+/* 1. Roxo (Escuro) */
+.team-member.purple-bg {
+  background: linear-gradient(135deg, #9C3FC3, #7a2f9a);
+  color: white;
+  box-shadow: 0 10px 25px rgba(156, 63, 195, 0.15);
+}
+.team-member.purple-bg:hover {
+  box-shadow: 0 15px 35px rgba(156, 63, 195, 0.4);
+}
+.purple-bg .member-photo img { border-color: white; }
+.purple-bg .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
+.purple-bg .member-details h3 { color: white; }
+.purple-bg .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
+.purple-bg .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
+.purple-bg .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+.purple-bg p { color: rgba(255, 255, 255, 0.9); }
+
+
+/* 2. Branco (Claro - com acento Roxo) */
+.team-member.white-bg {
+  background: white;
+  color: #333;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border: 2px solid #f8f9fa;
+}
+.team-member.white-bg:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.white-bg .member-photo img { border-color: #9C3FC3; }
+.white-bg .photo-frame { border-color: rgba(156, 63, 195, 0.4); }
+.white-bg .member-details h3 { color: #9C3FC3; }
+.white-bg .role { background: rgba(156, 63, 195, 0.1); color: #9C3FC3; }
+.white-bg .social-link { background: rgba(156, 63, 195, 0.08); color: #9C3FC3; border-color: rgba(156, 63, 195, 0.2); }
+.white-bg .social-link:hover { background: rgba(156, 63, 195, 0.15); border-color: rgba(156, 63, 195, 0.4); }
+.white-bg p { color: #555; }
+
+
+/* 3. Azul (Escuro - NOVO) */
+.team-member.blue-bg {
+  /* Royal Blue Gradient */
+  background: linear-gradient(135deg, #1a75ff, #005ce6);
+  color: white;
+  box-shadow: 0 10px 25px rgba(26, 117, 255, 0.15);
+}
+.team-member.blue-bg:hover {
+  box-shadow: 0 15px 35px rgba(26, 117, 255, 0.4);
+}
+.blue-bg .member-photo img { border-color: white; }
+.blue-bg .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
+.blue-bg .member-details h3 { color: white; }
+.blue-bg .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
+.blue-bg .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
+.blue-bg .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+.blue-bg p { color: rgba(255, 255, 255, 0.9); }
+
+
+/* 4. Verde (Escuro - NOVO) */
+.team-member.green-bg {
+  /* Emerald Green Gradient */
+  background: linear-gradient(135deg, #4CAF50, #388E3C);
+  color: white;
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.15);
+}
+.team-member.green-bg:hover {
+  box-shadow: 0 15px 35px rgba(76, 175, 80, 0.4);
+}
+.green-bg .member-photo img { border-color: white; }
+.green-bg .photo-frame { border-color: rgba(255, 255, 255, 0.6); }
+.green-bg .member-details h3 { color: white; }
+.green-bg .role { background: rgba(255, 255, 255, 0.15); color: white; backdrop-filter: blur(10px); }
+.green-bg .social-link { background: rgba(255, 255, 255, 0.1); color: white; border-color: rgba(255, 255, 255, 0.3); }
+.green-bg .social-link:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5); }
+.green-bg p { color: rgba(255, 255, 255, 0.9); }
+
+
+/* 5. Laranja (Claro - NOVO) */
+.team-member.orange-bg {
+  /* Light background with Orange accent */
+  background: #fff3e0; /* Very light orange background */
+  color: #333;
+  box-shadow: 0 10px 25px rgba(255, 152, 0, 0.08);
+  border: 2px solid #ffebcd;
+}
+.team-member.orange-bg:hover {
+  box-shadow: 0 15px 35px rgba(255, 152, 0, 0.2);
+}
+.orange-bg .member-photo img { border-color: #FF9800; } /* Orange Accent */
+.orange-bg .photo-frame { border-color: rgba(255, 152, 0, 0.4); } /* Orange Accent */
+.orange-bg .member-details h3 { color: #FF9800; } /* Orange Accent */
+.orange-bg .role { background: rgba(255, 152, 0, 0.1); color: #FF9800; } /* Orange Accent */
+.orange-bg .social-link { background: rgba(255, 152, 0, 0.08); color: #FF9800; border-color: rgba(255, 152, 0, 0.2); } /* Orange Accent */
+.orange-bg .social-link:hover { background: rgba(255, 152, 0, 0.15); border-color: rgba(255, 152, 0, 0.4); } /* Orange Accent */
+.orange-bg p { color: #555; }
+
+
+/* --- Configuração do Owl Carousel (Mantendo o tema Roxo como primário para a navegação) --- */
 .owl-stage {
   display: flex;
   align-items: center;
@@ -2890,6 +2914,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     margin-top: 10px;
 }
 
+/* Os ícones sociais foram ajustados aqui para ficarem circulares e centrados */
 .social-link {
     display: inline-flex;
     align-items: center;
@@ -2897,33 +2922,44 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    /* Removido o background genérico, as classes de cor cuidarão disso */
     transition: all 0.3s ease;
     text-decoration: none;
-}
-
-.social-link:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
+    padding: 0; /* Removido padding, pois agora é um círculo de 50x50 */
+    border: none; /* Removido borda, pois é tratado por classe */
 }
 
 .social-link .fa {
-    font-size: 30px;
+    font-size: 20px; /* Reduzido o tamanho do ícone para caber no círculo */
+}
+
+/* Reaplicando estilos específicos para social links em mobile (substitui os de cima) */
+
+/* Roxo (e Dark/Escuros) */
+.purple-bg .social-link, .blue-bg .social-link, .green-bg .social-link {
+    background: rgba(255, 255, 255, 0.1);
+}
+.purple-bg .social-link .fa, .blue-bg .social-link .fa, .green-bg .social-link .fa {
     color: #fff;
 }
+.purple-bg .social-link:hover, .blue-bg .social-link:hover, .green-bg .social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
 
-/* Para os membros com fundo branco, ajuste a cor dos ícones */
+/* Branco (e Light/Claros) */
+.white-bg .social-link, .orange-bg .social-link {
+    background: rgba(0, 0, 0, 0.08);
+}
 .white-bg .social-link .fa {
-    color: #333;
+    color: #9C3FC3;
+}
+.orange-bg .social-link .fa {
+    color: #FF9800;
+}
+.white-bg .social-link:hover, .orange-bg .social-link:hover {
+    background: rgba(0, 0, 0, 0.15);
 }
 
-.white-bg .social-link {
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.white-bg .social-link:hover {
-    background: rgba(0, 0, 0, 0.2);
-}
 }
 /* ===================================================================
  *  14. download - (_layout.scss)

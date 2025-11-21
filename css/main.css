@@ -2675,7 +2675,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .social-link {
   font-family: "muli-regular", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   padding: 0.3rem 0.7rem;
   border-radius: 12px;
   text-decoration: none;
@@ -2851,7 +2851,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
   
   .social-link {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     padding: 0.25rem 0.6rem;
   }
 }
@@ -2884,10 +2884,46 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     gap: 0.4rem;
   }
   
-  .social-link {
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
-  }
+.member-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.social-link .fa {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Para os membros com fundo branco, ajuste a cor dos ícones */
+.white-bg .social-link .fa {
+    color: #333;
+}
+
+.white-bg .social-link {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.white-bg .social-link:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
 }
 /* ===================================================================
  *  14. download - (_layout.scss)

@@ -81,10 +81,10 @@
 	var ssOwlCarousel = function() {
 
 		$(".owl-carousel").owlCarousel({	
-	      loop: true,
+	      loop: false,
   			nav: false,
 			autoHeight: true,
-  			items: 1
+  			items: 3
 		});
 
 	};  	

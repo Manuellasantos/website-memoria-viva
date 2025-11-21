@@ -165,6 +165,7 @@ p.lead {
   line-height: 1.857;
   color: #838383;
   margin-bottom: 3.6rem;
+  margin-top: 5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1074,17 +1075,7 @@ h1.intro-header {
   color: #151515;
   position: relative;
   padding-bottom: 3.6rem;
-}
-
-h1.intro-header::before {
-  display: block;
-  content: "";
-  height: 2px;
-  width: 70px;
-  background-color: #9C3FC3;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  margin-top: 2rem;
 }
 
 .wide {

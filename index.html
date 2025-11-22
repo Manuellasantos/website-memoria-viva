@@ -89,12 +89,28 @@
                     
 
                 </div>
-
-                <div class="home-image-right">
-                    <img src="images/app-img-principal.png" 
-                        data-aos="fade-up">
-                </div>
-            </div>
+<div class="home-image-right">
+    <picture>
+        <!-- Mobile - usa 0.5x -->
+        <source 
+            media="(max-width: 768px)" 
+            srcset="images/app-img-principal-0.5x.png"
+            type="image/png">
+        <!-- Tablet - usa 1x -->
+        <source 
+            media="(max-width: 1024px)" 
+            srcset="images/app-img-principal-1x.png"
+            type="image/png">
+        <!-- Desktop - usa a melhor disponível -->
+        <img 
+            src="images/app-img-principal-1x.png" 
+            srcset="images/app-img-principal-1x.png 1x,
+                    images/app-img-principal-2x.png 2x"
+            alt="App Memória Viva - Interface principal"
+            data-aos="fade-up"
+            class="home-app-image">
+    </picture>
+</div>
 
           </div> 
 

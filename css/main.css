@@ -1486,7 +1486,6 @@ h1.intro-header {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding-top: 21rem;
-  z-index: 500;
   width: 50%;
   text-align: right;
 }
@@ -1654,46 +1653,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
  * home section 
  * ------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1300px) {
-  .home-image-right {
-    right: 5rem;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  #home {
-    overflow: hidden;
-  }
-  .home-content {
-    vertical-align: middle;
-  }
-  .home-content-left {
-    padding: 18rem 0 12rem 40px;
-  }
-  .home-content-left h3 {
-    font-size: 1.5rem;
-  }
-  .home-content-left h1 {
-    font-size: 4.8rem;
-  }
-  .home-image-right {
-    padding-top: 18rem;
-  }
-  .home-image-right img {
-    vertical-align: top;
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .home-content-left h1 {
-    font-size: 4.6rem;
-  }
-  .home-content-left h1 br {
-    display: none;
-  }
-}
-
+/* ========== TABLET (1024px) ========== */
 @media only screen and (max-width: 1024px) {
   .home-content-left {
     width: 60%;
@@ -1715,100 +1675,162 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
 }
 
+/* ========== TABLET PEQUENO (900px) ========== */
 @media only screen and (max-width: 900px) {
   #home {
     height: auto;
-    min-height: 840px;
+    min-height: 700px;
+    overflow: visible;
   }
+  
   #home,
   .home-content {
     display: block;
     text-align: center;
   }
+  
   .home-content-left {
     width: 94%;
     position: static;
-    padding: 15rem 6rem 366px;
+    padding: 8rem 6rem 300px; /* Reduz padding inferior */
     margin: 0 auto;
   }
+  
   .home-content-left h1 {
     margin-bottom: 3.6rem;
   }
+  
   .home-image-right {
-    width: 400px;
+    width: 350px;
     right: auto;
-    top: auto;
+    top: 90%; /* Sobe a imagem */
     left: 50%;
-    bottom: 0;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    bottom: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     padding: 0;
-    margin-bottom: -378px;
+    margin-bottom: 0;
+  }
+  
+  .home-image-right img {
+    width: 150%;
+    max-width: 300px;
   }
 }
 
+/* ========== MOBILE (768px) ========== */
 @media only screen and (max-width: 768px) {
   #home {
-    min-height: auto;
+    min-height: 650px;
   }
+  
   .home-content-left h3 {
     font-size: 1.4rem;
   }
+  
   .home-content-left h1 {
     font-size: 3.6rem;
   }
+  
+  .home-content-left {
+    padding: 6rem 4rem 250px; /* Menos padding */
+  }
+  
+  .home-image-right {
+    width: 300px;
+    top: 95%; /* Sobe mais */
+  }
+  
+  .home-image-right img {
+    max-width: 300px;
+  }
 }
 
+/* ========== MOBILE PEQUENO (600px) ========== */
 @media only screen and (max-width: 600px) {
   .home-content-left {
-    padding: 12rem 6rem 366px;
+    padding: 5rem 2rem 200px;
   }
+  
   .home-content-left h1 {
     font-size: 3.3rem;
   }
+  
   .home-content-left .button.stroke {
     width: 100%;
     min-width: 0;
     max-width: 280px;
   }
+  
   .home-social-list {
     font-size: 2rem;
     right: 30px;
   }
+  
   .scroll-icon {
     top: 21px;
   }
+  
+  .home-image-right {
+    width: 280px;
+    top: 100%; /* Sobe ainda mais */
+  }
+  
+  .home-image-right img {
+    max-width: 250px;
+  }
 }
 
-@media only screen and (max-width: 500px) {
+/* ========== MOBILE MUITO PEQUENO (480px) ========== */
+@media only screen and (max-width: 480px) {
+  #home {
+    min-height: 550px;
+  }
+  
   .home-social-list,
   .home-scrolldown {
     display: none;
   }
+  
   .home-content-left {
-    padding: 12rem 2.5rem 366px;
+    padding: 4rem 1rem 150px; /* Mínimo de padding */
     width: 100%;
   }
+  
   .home-content-left h1 {
     font-size: 3rem;
   }
+  
+  .home-image-right {
+    width: 250px;
+    top: 100%; /* Posição máxima */
+  }
+  
+  .home-image-right img {
+    max-width: 210px;
+  }
 }
 
+/* ========== MOBILE EXTRA PEQUENO (400px) ========== */
 @media only screen and (max-width: 400px) {
   .home-content-left {
-    padding: 12rem 0 300px;
+    padding: 4rem 0 120px;
   }
+  
   .home-content-left .button.stroke {
     margin: 0 0 1.2rem 0;
   }
+  
   .home-image-right {
-    width: 320px;
-    margin-bottom: -298px;
+    width: 220px;
+    top: 110%; /* Ainda mais alto para telas muito pequenas */
+  }
+  
+  .home-image-right img {
+    max-width: 200px;
   }
 }
-
-
 
 /* ===================================================================
  *  11. about - (_layout.scss)
@@ -1819,7 +1841,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   min-height: 786px;
   background: #ffffff;
   padding-top: 18rem;
-  overflow: hidden;
+  overflow: visible; /* Mude de hidden para visible */
+  position: relative;
 }
 
 .about-intro {

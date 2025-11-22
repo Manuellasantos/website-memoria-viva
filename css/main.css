@@ -879,12 +879,7 @@ input::-moz-focus-inner {
   font-size: 1.5rem;
 }
 
-.alert-box .close {
-  position: absolute;
-  right: 1.8rem;
-  top: 1.8rem;
-  cursor: pointer;
-}
+
 
 .ss-error {
   background-color: #ffd1d2;
@@ -898,7 +893,7 @@ input::-moz-focus-inner {
 
 .ss-info {
   background-color: #d7ecfb;
-  color: #4a95cc;
+  color: #1c3d53;
 }
 
 .ss-notice {

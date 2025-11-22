@@ -3540,6 +3540,7 @@ body {
     color: #ffffff;
     background: rgba(106, 13, 173, 0.3);
     border-color: rgba(106, 13, 173, 0.6);
+    min-height: 50px;
 }
 
 /* ----------------------------------------------------- */

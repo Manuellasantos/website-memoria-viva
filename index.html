@@ -33,24 +33,29 @@
 	    </div>
 
 	   	<nav id="header-nav-wrap">
-			<ul class="header-main-nav">
-				<li class="current"><a class="smoothscroll"  href="#home" title="home">Início</a></li>
-                <li><a class="smoothscroll"  href="#sobre" title="sobre">Sobre</a></li>
-				<li><a class="smoothscroll"  href="#func" title="funcionalidades">Funcionalidades</a></li>
-				<li><a class="smoothscroll"  href="#equipe" title="equipe">Equipe</a></li>
-				<li><a class="smoothscroll"  href="#download" title="download">Baixe aqui!</a></li>	
-			</ul>
-		</nav>
+    <ul class="header-main-nav">
+        <li class="current"><a class="smoothscroll" href="#home" title="home">Início</a></li>
+        <li><a class="smoothscroll" href="#sobre" title="sobre">Sobre</a></li>
+        <li><a class="smoothscroll" href="#func" title="funcionalidades">Funcionalidades</a></li>
+        <li><a class="smoothscroll" href="#equipe" title="equipe">Equipe</a></li>
+        <li><a class="smoothscroll" href="#download" title="download">Baixe aqui!</a></li>	
+        <li>
+            <div class="header-daltonismo-toggle">
+                <select id="tipo-daltonismo" onchange="aplicarFiltroDaltonismo(this.value)">
+                    <option value="original">Padrão (Cores Originais)</option>
+                    <option value="protanopia">Protanopia (Vermelho/Verde)</option>
+                    <option value="deuteranopia">Deuteranopia (Vermelho/Verde)</option>
+                    <option value="tritanopia">Tritanopia (Azul/Amarelo)</option>
+                    <option value="acromatopsia">Acromatopsia (Preto e Branco)</option>
+                </select>
+            </div>
+        </li>
+    </ul>
+</nav>
 
-		<a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
-   	
-   </header>
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
 
-      </ul>
-    </nav>
-
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>      
-    
+  
    </header>
 
    <!-- início -->
@@ -111,17 +116,6 @@
                   O Memória Viva é um aplicativo criado para apoiar pessoas com Alzheimer em estágio inicial e intermediário. Ele ajuda a reforçar lembranças importantes por meio de fotos, áudios e mensagens enviadas pelo cuidador. O objetivo é facilitar a rotina, fortalecer vínculos e oferecer uma experiência simples, afetiva e acessível para o usuário e sua família.
                 </p>
             </div>   
-            
-               <div class="header-daltonismo-toggle">
-    <label for="tipo-daltonismo">FILTRO:</label>
-    <select id="tipo-daltonismo" onchange="aplicarFiltroDaltonismo(this.value)">
-        <option value="original">Padrão</option>
-        <option value="protanopia">Protanopia</option>
-        <option value="deuteranopia">Deuteranopia</option>
-        <option value="tritanopia">Tritanopia</option>
-        <option value="acromatopsia">Acromatopsia</option>
-    </select>
-</div>
             
                 <!-- Script VLibras -->
     <div vw class="enabled">

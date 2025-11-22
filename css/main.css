@@ -3446,76 +3446,133 @@ body {
     -webkit-filter: grayscale(100%);
 }
 
-/* =========================================
-   FILTRO DE DALTONISMO — ULTRA COMPACTO
-   ========================================= */
-
+/* --- Variáveis de Cores (Mantenha) --- */
 :root {
     --roxo-principal: #6A0DAD;
     --roxo-claro: #9370DB;
+    --cor-texto-nav: rgba(255, 255, 255, 0.45); /* Cor dos links normais (Cinza Transparente) */
+    --cor-texto-hover: #ffffff; /* Cor dos links ao passar o mouse/ativo (Branco) */
+    --fundo-select-nav: rgba(255, 255, 255, 0.1); /* Fundo sutil para o select */
+    --borda-select-nav: rgba(255, 255, 255, 0.3); /* Borda sutil para o select */
 }
+/* ----------------------------------------------------- */
+/* 1. CONTAINER (GARANTE ALINHAMENTO) */
+/* ----------------------------------------------------- */
 
 .header-daltonismo-toggle {
-    position: absolute;
-    top: 20px;         /* pode reduzir mais se quiser */
-    right: 15px;
-    z-index: 999;
-
-    background: #fff;
-    padding: 2px 4px;         /* MINÚSCULO */
-    border-radius: 3px;
-    border: 1px solid var(--roxo-principal);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-
+    /* Mantido - Garante que o container se comporte como um link na lista */
+    position: relative; 
+    top: auto;
+    right: auto;
+    z-index: auto;
     display: flex;
     align-items: center;
-    gap: 3px;
+    line-height: 72px; 
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 8px; 
+    margin-left: 10px;
 }
 
-.header-daltonismo-toggle label {
-    color: var(--roxo-principal);
-    font-size: 0.75rem;   /* bem pequeno */
-    font-weight: 600;
-}
+/* ----------------------------------------------------- */
+/* 3. SELECT (CAIXA DE ESCOLHA) - OTIMIZAÇÃO DE TAMANHO E COR */
+/* ----------------------------------------------------- */
 
 .header-daltonismo-toggle select {
-    background: #f0f0f0;
-    color: #333;
-    padding: 2px 4px;      /* minúsculo */
-    border: 1px solid var(--roxo-claro);
-    border-radius: 3px;
-    font-size: 0.75rem;    /* minúsculo */
+    /* Base de Combinação */
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 14px; 
     cursor: pointer;
-
+    
+    /* COR INICIAL DO TEXTO E FUNDO */
+    color: var(--cor-texto-nav);
+    background: transparent;
+    
+    /* Estilo e Tamanho EXTREMAMENTE REDUZIDO */
+    border: 1px solid var(--cor-texto-nav); 
+    padding: 1px 6px; /* <-- REDUÇÃO SIGNIFICATIVA DO PADDING VERTICAL */
+    border-radius: 4px; 
+    max-width: 200px; 
+    max-height: 30px;
+    
+    /* Seta Customizada (Ajustada para o novo padding) */
     appearance: none;
     -webkit-appearance: none;
-
-    /* seta custom */
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%236A0DAD%22%20d%3D%22M287%2069.9a14.7%2014.7%200%200%200-20.8%200L146.2%20190.5%2026.3%2069.9a14.7%2014.7%200%200%200-20.8%2020.8l130.6%20130.8c5.8%205.8%2015.2%205.8%2021%200l130.6-130.8a14.7%2014.7%200%200%200%200-20.8z%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
-    background-position: right 2px center;
+    
+    /* Seta (Cor da Nav) */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22rgba(255,255,255,0.45)%22%20d%3D%22M287%2069.9a14.7%2014.7%200%200%200-20.8%200L146.2%20190.5%2026.3%2069.9a14.7%2014.7%200%200%200-20.8%2020.8l130.6%20130.8c5.8%205.8%2015.2%205.8%2021%200l130.6-130.8a14.7%2014.7%200%200%200%200-20.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-position: right 3px center; /* Posição ajustada */
     background-size: 6px;
-
-    padding-right: 12px;
+    padding-right: 18px; 
+    
+    transition: all 0.2s ease;
 }
+/* ----------------------------------------------------- */
+/* 4. EFEITOS DE INTERAÇÃO (HOVER e FOCUS) */
+/* ----------------------------------------------------- */
 
 .header-daltonismo-toggle select:hover {
-    background: #fff;
-    border-color: var(--roxo-principal);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .header-daltonismo-toggle select:focus {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
     outline: none;
-    box-shadow: 0 0 0 1px var(--roxo-claro);
 }
 
-/* Mobile */
+/* Estilo para as opções do select */
+.header-daltonismo-toggle select option {
+    background: #111111;
+    color: #ffffff;
+    padding: 8px;
+    font-size: 12px;
+}
+
+/* ----------------------------------------------------- */
+/* 5. ESTADO ATUAL (QUANDO EM USO) */
+/* ----------------------------------------------------- */
+
+/* Quando um filtro diferente do padrão está ativo */
+.header-daltonismo-toggle select:not([value="original"]) {
+    color: #ffffff;
+    background: rgba(106, 13, 173, 0.3);
+    border-color: rgba(106, 13, 173, 0.6);
+}
+
+/* ----------------------------------------------------- */
+/* 6. RESPONSIVIDADE */
+/* ----------------------------------------------------- */
+
 @media screen and (max-width: 768px) {
     .header-daltonismo-toggle {
-        right: 55px;
-        top: 15px;
+        line-height: normal;
+        padding: 10px 0;
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .header-daltonismo-toggle select {
+        width: 90%;
+        max-width: 200px;
+        font-size: 13px;
+        padding: 8px 12px;
+        padding-right: 30px;
     }
 }
 
-
-
+/* Para telas muito pequenas */
+@media screen and (max-width: 480px) {
+    .header-daltonismo-toggle select {
+        width: 95%;
+        font-size: 12px;
+    }
+}

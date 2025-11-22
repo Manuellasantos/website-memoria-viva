@@ -78,18 +78,25 @@
 
   /* Owl Carousel
 	* ------------------------------------------------------ */
-	var ssOwlCarousel = function() {
-
-		$(".owl-carousel").owlCarousel({	
-	      loop: false,
-  			nav: false,
-			autoHeight: true,
-  			items: 3
-		});
-
-	};  	
-
-
+var ssOwlCarousel = function() {
+    $(".owl-carousel").owlCarousel({	
+        loop: false,
+        nav: false,
+        autoHeight: true,
+        items: 3,
+        responsive: {
+            0: {
+                items: 1 
+            },
+            768: {
+                items: 2  
+            },
+            1024: {
+                items: 3  
+            }
+        }
+    });
+};
   /* Highlight the current section in the navigation bar
 	* ------------------------------------------------------ */
 	var ssWaypoints = function() {

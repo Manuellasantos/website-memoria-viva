@@ -1029,7 +1029,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 [data-aos=fade-up] {
-  transform: translateY(100px);
+  transform: translateY(10px);
 }
 
 [data-aos=fade-down] {

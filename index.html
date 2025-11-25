@@ -5,7 +5,6 @@
     <meta name="descrição" content="Landing page - Memória Viva">
     <meta name="author" content="Perpétua">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Memória Viva</title>
 
     <link rel="stylesheet" href="css/base.css">
@@ -34,7 +33,7 @@
 
 	   	<nav id="header-nav-wrap">
     <ul class="header-main-nav">
-        <li class="current"><a class="smoothscroll" href="#home" title="home">Início</a></li>
+        <li class="current"><a class="smoothscroll" href="home" title="home">Início</a></li>
         <li><a class="smoothscroll" href="#sobre" title="sobre">Sobre</a></li>
         <li><a class="smoothscroll" href="#func" title="funcionalidades">Funcionalidades</a></li>
         <li><a class="smoothscroll" href="#equipe" title="equipe">Equipe</a></li>
@@ -44,7 +43,7 @@
                 <select id="tipo-daltonismo" onchange="aplicarFiltroDaltonismo(this.value)">
                     <option value="original">Padrão (Cores Originais)</option>
                     <option value="protanopia">Protanopia (Vermelho/Verde)</option>
-                    <option value="deuteranopia">Deuteranopia (Vermelho/Verde)</option>
+                    <option value="deuteranopia">Deuteranopia (Verde/Vermelho)</option>
                     <option value="tritanopia">Tritanopia (Azul/Amarelo)</option>
                     <option value="acromatopsia">Acromatopsia (Preto e Branco)</option>
                 </select>
@@ -53,10 +52,9 @@
     </ul>
 </nav>
 
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    <a class="header-menu-toggle" href="#"><span>Menu</span></a>
 
-  
-   </header>
+    </header>
 
    <!-- início -->
   <section id="home" data-parallax="scroll" data-image-src="images/background.png" data-natural-width=3000 data-natural-height=2000>

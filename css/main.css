@@ -3003,31 +3003,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 230px 71px;
-}
-
-#download .download-badges li a.badge-appstore {
-  background-image: url("../images/appstore.png");
-}
-
-#download .download-badges li a.badge-googleplay {
-  background-image: url("../images/google-play.png");
+  background-size: 830px 600px;
 }
 
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * download
- * ------------------------------------------------------------------- */
-
-@media only screen and (max-width: 768px) {
-  #download .download-badges li a {
-    width: 194px;
-    height: 60px;
-    background-size: 194px 60px;
-  }
+#download .download-badges li a.badge-android {
+  background-image: url("../images/apk_icon.png");
 }
-
 
 
 /* ===================================================================

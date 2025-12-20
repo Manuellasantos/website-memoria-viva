@@ -31,13 +31,14 @@
         <img src="images/logo.png" class="logo-img" alt="Logo Memória Viva">
 	    </div>
 
-	   	<nav id="header-nav-wrap">
+	<nav id="header-nav-wrap">
     <ul class="header-main-nav">
         <li class="current"><a class="smoothscroll" href="#home" title="home">Início</a></li>
         <li><a class="smoothscroll" href="#sobre" title="sobre">Sobre</a></li>
         <li><a class="smoothscroll" href="#func" title="funcionalidades">Funcionalidades</a></li>
         <li><a class="smoothscroll" href="#equipe" title="equipe">Equipe</a></li>
-        <li><a class="smoothscroll" href="#download" title="download">Baixe aqui!</a></li>	
+        <li><a class="smoothscroll" href="#download" title="download">Baixe aqui!</a></li>  
+        
         <li>
             <div class="header-daltonismo-toggle">
                 <select id="tipo-daltonismo" onchange="aplicarFiltroDaltonismo(this.value)">
@@ -48,6 +49,12 @@
                     <option value="acromatopsia">Acromatopsia (Preto e Branco)</option>
                 </select>
             </div>
+        </li>
+
+        <li class="dark-mode-container">
+            <a href="javascript:void(0)" id="dark-mode-toggle" title="Alternar Modo Escuro">
+                <i class="fa fa-moon-o" id="dark-mode-icon"></i>
+            </a>
         </li>
     </ul>
 </nav>
@@ -118,7 +125,7 @@
               </li>
           </ul>
         
-  </section> 
+  </section>
   <section id="sobre" style="padding-top: 10rem;">       
 	  <div class="row about-intro">
             <div class="col-four">

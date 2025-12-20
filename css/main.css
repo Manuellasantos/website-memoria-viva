@@ -3578,3 +3578,92 @@ body {
         font-size: 12px;
     }
 }
+
+/* ===================================================================
+ * DARK MODE - ESTILOS ALTERNÁVEIS
+ * =================================================================== */
+
+/* Fundo e Texto Base */
+body.dark-mode {
+  background: #111111 !important;
+  color: #a0a0a0 !important;
+}
+
+/* Títulos */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+body.dark-mode h4, body.dark-mode h5, body.dark-mode h6,
+body.dark-mode .h01, body.dark-mode .h02, body.dark-mode .h03, 
+body.dark-mode .h04, body.dark-mode .h05, body.dark-mode .h06,
+body.dark-mode th {
+  color: #ffffff !important;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #33a6ff;
+}
+
+/* Formulários e Inputs */
+body.dark-mode input[type="email"],
+body.dark-mode input[type="text"],
+body.dark-mode textarea,
+body.dark-mode select {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #ffffff !important;
+  border: 1px solid #333 !important;
+}
+
+body.dark-mode label {
+  color: #ffffff;
+}
+
+/* Placeholders */
+body.dark-mode ::-webkit-input-placeholder { color: #666; }
+
+/* Seção Home e Overlays */
+body.dark-mode #home {
+  background-color: #000;
+}
+
+body.dark-mode #home .overlay {
+  opacity: 0.6;
+}
+
+/* Tabelas e Divisores */
+body.dark-mode th, body.dark-mode td {
+  border-bottom: 1px solid #222;
+}
+
+body.dark-mode hr {
+  border-top: 1px solid #222;
+}
+
+/* Preloader */
+body.dark-mode #preloader {
+  background-color: #111;
+}
+
+/* Ajuste do botão Stroke no modo escuro */
+body.dark-mode button.stroke, 
+body.dark-mode .button.stroke {
+  border-color: #444 !important;
+  color: #aaa !important;
+}
+
+/* FORÇAR ESCURO EM SEÇÕES ESPECÍFICAS DO DAZZLE */
+body.dark-mode section, 
+body.dark-mode .row, 
+body.dark-mode #about, 
+body.dark-mode #features, 
+body.dark-mode #pricing, 
+body.dark-mode #testimonials, 
+body.dark-mode #download,
+body.dark-mode #equipe {
+    background-color: #111111 !important;
+}
+
+/* Ajuste específico para os cards da equipe se eles continuarem brancos */
+body.dark-mode .team-member, 
+body.dark-mode .member-content {
+    background-color: #111111 !important;
+}

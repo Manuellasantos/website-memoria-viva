@@ -3011,6 +3011,12 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   background-image: url("../images/apk_icon.png");
 }
 
+#download .download-badges li a.badge-ios {
+  background-image: url("../images/Gemini_Generated_Image_595flx595flx595f.png");
+}
+
+
+
 
 /* ===================================================================
  *  15. footer styles - (_site-layout.scss)

@@ -66,3 +66,5 @@ Se preferir, use a extensão Live Server do VS Code para abrir o site e ver as a
 | Manuella Santos Cruz | Líder de Projeto, Front-End e Back-End | Layout, estrutura das páginas, organização do conteúdo e contribuições no back-end |
 | Matheus Bonfim Batista | Engenheiro de Dados e assistente no site | Organização das informações técnicas e revisão estrutural |
 | Fernanda Marques | Back-End e UI/UX Designer | Identidade visual, design responsivo e experiência do usuário |
+| Dylan Nejelischi | Front-End | Design responsivo e experiência do usuário |
+

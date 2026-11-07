@@ -1,43 +1,69 @@
-Memória Viva — Website Oficial
+# Memória Viva - Website Oficial
 
-O site Memória Viva foi desenvolvido como parte do projeto de TCC para apresentar o aplicativo, explicar sua proposta e disponibilizar o download de forma simples e acessível. O website funciona como vitrine institucional do projeto, destacando seus objetivos, funcionalidades e impacto no apoio a pessoas com Alzheimer.
+Site desenvolvido como parte do projeto de TCC para apresentar o aplicativo **Memória Viva**, explicar a proposta e disponibilizar o download.
 
-- Objetivos do Site
+O Memória Viva é um aplicativo criado para apoiar pessoas com Alzheimer em estágio inicial e intermediário. Ele ajuda a reforçar lembranças importantes por meio de fotos, áudios e mensagens enviadas pelo cuidador.
 
-Apresentar o aplicativo Memória Viva e sua importância.
+O site funciona como a página oficial do projeto e reúne os objetivos, as funcionalidades e o impacto do aplicativo.
 
-Mostrar as funcionalidades do app de forma clara e visual.
+**Acesse:** https://manuellasantos.github.io/website-memoria-viva/
 
-Disponibilizar o download do APK.
+## Prévia
 
-Organizar informações do TCC de maneira objetiva e fácil de navegar.
+![Página inicial do site Memória Viva](preview-site.png)
 
-- Conteúdos do Website
+## Tecnologias utilizadas
 
-Página inicial explicativa sobre o projeto.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-181717?logo=github&logoColor=white)
 
-Seção detalhada sobre o aplicativo.
+O layout é responsivo e se adapta a celulares, tablets e computadores. O versionamento foi feito com Git e GitHub, e o site está publicado com o GitHub Pages.
 
-Botão para download do APK.
+## Objetivos do site
 
-Galeria com imagens das telas do app.
+- Apresentar o aplicativo Memória Viva e a importância da proposta.
+- Mostrar as funcionalidades do app de forma clara e visual.
+- Disponibilizar o download do aplicativo.
+- Organizar as informações do TCC de forma objetiva e fácil de navegar.
 
-Página da equipe de desenvolvimento.
+## O que o site tem
 
-Informações de contato.
+A página inicial é uma página única, dividida em seções com menu de navegação:
 
-- Tecnologias Utilizadas
+- **Início:** apresentação do projeto e botão de download.
+- **Sobre:** explicação sobre o aplicativo.
+- **Funcionalidades:** o que o app oferece, com imagens das telas.
+- **Equipe:** os integrantes do projeto.
+- **Baixe aqui:** download do APK para Android e acesso à versão web para iOS.
 
-HTML, CSS, JavaScript
+Além disso, o site tem:
 
-Design responsivo
+- Modos de cor para acessibilidade: padrão, protanopia, deuteranopia, tritanopia e acromatopsia.
+- Formulário e informações de contato.
+- Páginas de perguntas frequentes (FAQ), termos de uso, política de privacidade e instruções para excluir a conta.
 
-Git e GitHub para versionamento
+## Como rodar
 
-- Equipe de Desenvolvimento
-Nome	Função	Contribuições
-Manuella Santos Cruz	Líder de Projeto / Front-End / Back-End	Desenvolvimento do layout, estrutura das páginas, organização do conteúdo e contribuições no back-end.
-Matheus Bonfim Batista	Data Engineer / Assistente no Site	Organização de informações técnicas e revisão estrutural.
-Fernanda Marques	Back-End / UI & UX Designer	Criação da identidade visual, design responsivo e experiência do usuário.
+Baixe ou clone o repositório e abra o arquivo `index.html` no navegador. Não é preciso instalar nada.
 
+```bash
+git clone https://github.com/manuellasantos/website-memoria-viva.git
+```
 
+Se preferir, use a extensão Live Server do VS Code para abrir o site e ver as alterações ao salvar.
+
+## Download do aplicativo
+
+- **Android:** APK disponível pelo botão de download do site.
+- **iOS:** acesso por web app, não por aplicativo nativo.
+
+## Equipe de desenvolvimento
+
+| Nome | Função | Contribuições |
+|---|---|---|
+| Manuella Santos Cruz | Líder de Projeto, Front-End e Back-End | Layout, estrutura das páginas, organização do conteúdo e contribuições no back-end |
+| Matheus Bonfim Batista | Engenheiro de Dados e assistente no site | Organização das informações técnicas e revisão estrutural |
+| Fernanda Marques | Back-End e UI/UX Designer | Identidade visual, design responsivo e experiência do usuário |
